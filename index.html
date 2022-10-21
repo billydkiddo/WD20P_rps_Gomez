@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <h1>ROCK PAPER SCISSORS <br />BOXING EDITION</h1>
+      </header>
+      <!--SCORE BOARD DIV-->
+      <div class="score_board">
+        <div id="user_label" class="badge">PLAYER</div>
+        <div id="computer_label" class="badge">COMPU</div>
+        <span id="user_score"> 0</span>:<span id="computer_score">0</span>
+      </div>
+      <!--SCORE BOARD DIV END-->
+
+      <!--RESULT LABEL DIV-->
+      <div class="result">
+        <p>LET'S GET IT ON!</p>
+      </div>
+      <!--RESULT LABEL DIV END-->
+      <!--RPS DIV-->
+      <div class="choices">
+        <div class="choice" id="r">
+          <img src="rock.png" style="width: 100px" alt="" />
+        </div>
+        <div class="choice" id="p">
+          <img src="paper.png" style="width: 100px" alt="" />
+        </div>
+        <div class="choice" id="s">
+          <img src="scissors.png" style="width: 100px" alt="" />
+        </div>
+      </div>
+      <!--RPS DIV END-->
+
+      <!--<button type="button" id="button" onclick="(clearScore());">
+        RESTART
+      </button>-->
+      <p id="action_message">MAKE YOUR MOVE</p>
+      <center>
+        <a href="index.html" class="btn btn-light" id="refreshbutton"
+          >REFRESH</a
+        >
+      </center>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
